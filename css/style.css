@@ -1,0 +1,201 @@
+:root{
+    --maingreen: rgb(186, 240, 77)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000
+}
+
+.img-responsive{
+    height: auto;
+    width: 100%;
+}
+
+body{
+    font-family:'Parisienne', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 5rem;
+
+    background-color: var(--maingreen);
+
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+header .logo{
+    width: 50px;
+}
+
+.menu-content{
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    
+}
+
+.menu-content .menu-link::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    border-bottom: #000 solid 2px;
+
+    transition: 1.5s;
+}
+
+.menu-content .menu-link:hover::after{
+    width: 100%
+}
+
+.menu-content .menu-link .adote{
+    padding: 10px 15px;
+    background: #f0f0f0;
+    color: var(--maingreen);
+    border-radius: 10px 2px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: 1.5s;
+}
+
+.menu-content .menu-link .adote:hover{
+    border-radius: 2px 10px 2px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.banner{
+    width: 100%;
+}
+
+#about, #help{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+#about .about-text{
+    width: 70%;
+}
+
+#about .about-text h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+#about .about-text p{
+    font-family:'Raleway', sans-serif;
+    padding: 20px 40px;
+}
+
+#about .about-img{
+    width: 70%;
+}
+
+#help .help-img{
+    width: 50%;
+}
+
+#help .help-text{
+    width: 50%
+}
+
+#help .help-text h3{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+#help .help-text ul{
+    font-family:'Raleway', sans-serif;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+#adote{
+    
+    background: var(--maingreen);
+}
+
+.ajust-size{
+    width:90%;
+    margin: 0 5%;
+}
+
+#card-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 65vh;
+}
+
+#adote .adote-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f0f0f0;
+
+    border-radius: 15px;
+
+    padding: 35px 25px;
+}
+
+#adote .adote-card .pet-img{
+    width: 150px;
+    height: 150px;
+}
+#adote .adote-card .pet-img img{
+    border-radius: 10px;
+}
+
+#adote .adote-card .pet-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+
+.btn-adote a{
+    padding: 10px 15px;
+    background: var(--maingreen);
+    color: #f0f0f0;
+    border-radius: 10px 2px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+
+    transition: .5s;
+}
+
+.btn-adote a:hover{
+    border-radius: 2px 10px 2px;
+    color: #000;
+    padding: 12px 15px;
+}
